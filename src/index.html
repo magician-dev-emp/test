@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+	<div class="wrapper">
+
+		<main class="page">
+			<section class="page__main">
+				<div class="main__flex">
+					<div class="main__item main__item-body">
+						@@include('html/_header.htm',{})
+						<h1 class="main__title">Fulfillment for marketplaces in Moscow</h1>
+						<div class="main__sub-title">
+							We'll do everything for you!</div>
+						<ul class="main__lists">
+							<li class="main__list">
+								<div class="main__list-img"><img src="@img/w1.png" alt=""></div>
+								<div class="main__list-text">We will pick up the goods from the supplier's warehouse.
+								</div>
+							</li>
+							<li class="main__list">
+								<div class="main__list-img"><img src="@img/w2.png" alt=""></div>
+								<div class="main__list-text">We will bring it and unload it at our warehouse
+								</div>
+							</li>
+							<li class="main__list">
+								<div class="main__list-img"><img src="@img/w3.png" alt=""></div>
+								<div class="main__list-text">We will make the shipment to the marketplace warehouse and
+									ensure quick acceptance.</div>
+							</li>
+						</ul>
+						<a data-goto=".page__form" href="#" class="main__button">Order</a>
+					</div>
+					<div class="main__item main__item-img">
+						<img src="@img/w4.jpg" alt="">
+					</div>
+				</div>
+			</section>
+			<section class="page__opisanie">
+				<div class="opisanie__items">
+					<div data-watch-once data-watch class="opisanie__item opisanie__item-none opisanie__item-left">
+						<img src="@img/w6.jpg" alt="">
+					</div>
+
+					<div class="opisanie__item opisanie__item-text">
+						<div data-watch-once data-watch class="opisanie__flex">
+							<div class="opisanie__img"><img src="@img/w10.png" alt=""></div>
+							<div class="opisanie__text">We will carefully check the goods for defects</div>
+						</div>
+						<div data-watch-once data-watch class="opisanie__flex">
+							<div class="opisanie__img"><img src="@img/w7.png" alt=""></div>
+							<div class="opisanie__text">We will select a personalized package for your product.</div>
+						</div>
+						<div data-watch-once data-watch class="opisanie__flex">
+							<div class="opisanie__img"><img src="@img/w9.png" alt=""></div>
+							<div class="opisanie__text">
+								We will accurately pack and label the product according to the marketplace standards.
+							</div>
+						</div>
+						<div data-watch-once data-watch class="opisanie__flex">
+							<div class="opisanie__img"><img src="@img/w8.png" alt=""></div>
+							<div class="opisanie__text">We will place your product in a secure, dry and clean warehouse.
+							</div>
+						</div>
+						<a data-watch-once data-watch data-goto=".page__form" href="#"
+							class="opisanie__button">ORDER</a>
+					</div>
+					<div data-watch-once data-watch class="opisanie__item opisanie__item-right ">
+						<img src="@img/w5.jpg" alt="">
+					</div>
+				</div>
+			</section>
+			<section class="page__form">
+				<div class="form__container">
+					<div class="form__body">
+						<div class="form__block">
+							<div data-watch-once data-watch class="form__title">Any other questions?</div>
+							<form action="send.php" method="POST">
+								<input data-watch-once data-watch type="text" name="name" data-error="Error"
+									placeholder="Name" class="input">
+								<input data-watch-once data-watch type="text" name="email" data-error="Error"
+									placeholder="E-mail" class="input">
+								<div data-watch-once data-watch class="checkbox-lable-body">
+									<input type="checkbox" id="checkbox" name="ok" checked>
+									<label for="checkbox" class="checkbox-lable"><span>I accept Privacy
+											policy</span></label>
+								</div>
+
+								<button data-watch-once data-watch type="submit" class="form__button">Submit
+									Form</button>
+							</form>
+						</div>
+						<div class="form__img"><img src="@img/w11.png" alt=""></div>
+
+					</div>
+				</div>
+			</section>
+			<div class="body-menu">
+				<ul class="header__items">
+					<li data-watch-once data-watch class="header__item-main"><a data-goto=".page__main" href=""
+							class="menu__link">main</a></li>
+					<li data-watch-once data-watch class="header__item-main"><a data-goto=".page__opisanie" href=""
+							class="menu__link">What we offer</a></li>
+					<li data-watch-once data-watch class="header__item-main"><a data-goto=".page__form" href=""
+							class="menu__link">order</a></li>
+				</ul>
+			</div>
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
